@@ -9,10 +9,9 @@ body {
   background-image: linear-gradient(to left, #858483 0%, #304352 100%);
   font-family: "Source Sans 3", sans-serif;
   letter-spacing: 2px;
-  overflow-y: auto; /* You can adjust this property based on your design */
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .header {
@@ -43,6 +42,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 20px; /* Add padding for spacing */
+  overflow-y: auto; /* You can adjust this property based on your design */
 }
 
 section {
@@ -51,17 +51,12 @@ section {
   width: 80%;
   margin: 20px 0; /* Add margin for spacing between sections */
   border-top: 2px solid rgb(158, 158, 158);
-}
-
-.section-header {
+  margin-bottom: 100px;
 }
 
 .section-content {
   display: flex;
   justify-content: center;
-}
-
-.aboutme {
 }
 
 .skills-content {
@@ -94,6 +89,52 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.section-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container {
+  display: flex;
+}
+
+.project-container img {
+  width: 500px;
+  height: 250px;
+  margin: 20px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.project-content ul {
+  margin: 0;
+}
+
+.project-content h2 {
+  margin-bottom: 0;
+  transition: 0.2s ease;
+  color: white;
+}
+
+.project-content h2:hover {
+  cursor: pointer;
+  color: #96a9b8;
+}
+
+.project-content img:hover {
+  cursor: pointer;
+}
+
+.hireme-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
 
 .header-button {
